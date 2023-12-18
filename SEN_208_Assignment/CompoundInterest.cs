@@ -7,7 +7,7 @@ namespace SEN_208_Assignment
 {
     public class CompoundInterest
     {
-        public static void Main(string[] args)
+        public static void MainI(string[] args)
         {
             // Get All Data
             Console.Write("Enter principal amount (e.g: 1000): ");
@@ -16,16 +16,13 @@ namespace SEN_208_Assignment
             double rate = Convert.ToDouble(Console.ReadLine());
             Console.Write("Enter the number of years (e.g: 5): ");
             int years = Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter the number of times the interest is compounded per year (e.g: 2): ");
-            int compoundingFrequency = Convert.ToInt32(Console.ReadLine());
-
+            
             // Calculate the compound interest
-            double perCompoundRate = rate / compoundingFrequency;
-            double amount = principal * Math.Pow(1 + perCompoundRate, compoundingFrequency * years);
-            double compoundInterest = amount - principal;
+            double amount = principal * Math.Pow(1 + (rate/100), years);
+            double CI = amount - principal;
 
-            // Show the result
-            Console.WriteLine("Compound Interest: {0}", compoundInterest);
+            // Display the result
+            Console.WriteLine("Compound Interest: {0}", CI);
 
             // Keep the terminal Alive
             Console.ReadKey();

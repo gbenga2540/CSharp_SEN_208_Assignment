@@ -29,6 +29,7 @@ namespace SEN_208_Assignment
                 double root1 = (-b + Math.Sqrt(discriminant)) / (2 * a);
                 double root2 = (-b - Math.Sqrt(discriminant)) / (2 * a);
 
+                // Display the result
                 Console.WriteLine("Root 1: {0}", root1);
                 Console.WriteLine("Root 2: {0}", root2);
             }
@@ -36,6 +37,8 @@ namespace SEN_208_Assignment
             {
                 // Two real and equal roots
                 double root = -b / (2 * a);
+
+                // Display the result
                 Console.WriteLine("Root 1 = Root 2: {0}", root);
             }
             else
@@ -44,6 +47,7 @@ namespace SEN_208_Assignment
                 double realPart = -b / (2 * a);
                 double imaginaryPart = Math.Sqrt(-discriminant) / (2 * a);
 
+                // Display the result
                 Console.WriteLine("Root 1: {0} + {1}i", realPart, imaginaryPart);
                 Console.WriteLine("Root 2: {0} - {1}i", realPart, imaginaryPart);
             }

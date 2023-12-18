@@ -15,10 +15,12 @@ namespace SEN_208_Assignment
 
             if (IsPalindrome(number))
             {
+                // Display the result
                 Console.WriteLine($"{number} is a palindrome.");
             }
             else
             {
+                // Display the result
                 Console.WriteLine($"{number} is not a palindrome.");
             }
 
@@ -29,6 +31,7 @@ namespace SEN_208_Assignment
             // FUNCTIONS
             static bool IsPalindrome(int num)
             {
+                // A number that reads the same foward as backward
                 int originalNumber = num;
                 int reversedNumber = 0;
                 while (num > 0)

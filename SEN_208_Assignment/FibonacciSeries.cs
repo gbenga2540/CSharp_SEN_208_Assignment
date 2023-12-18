@@ -7,12 +7,13 @@ namespace SEN_208_Assignment
 {
     public class FibonacciSeries
     {
-        public static void MainI(string[] args)
+        public static void Main(string[] args)
         {
             // Get All Data
             Console.Write("Enter the number of terms in the Fibonacci series: ");
             int n = Convert.ToInt32(Console.ReadLine());
 
+            // Display the result
             Console.WriteLine("\nFibonacci Series:");
             for (int i = 0; i < n; i++)
             {

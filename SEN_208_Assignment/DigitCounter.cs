@@ -14,6 +14,7 @@ namespace SEN_208_Assignment
             int number = Convert.ToInt32(Console.ReadLine());
 
             int digitCount = CountDigits(number);
+            // Display the result
             Console.WriteLine($"The number of digits in {number} is: {digitCount}");
 
             // Keep the terminal Alive

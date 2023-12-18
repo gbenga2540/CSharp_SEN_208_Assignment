@@ -20,7 +20,7 @@ namespace SEN_208_Assignment
             // Simple Interest Formula --> (PRT/100)
             double SI = (principal * rate * time) / 100;
 
-            // Show the result
+            // Display the result
             Console.WriteLine("Simple Interest: {0}", SI);
 
             // Keep the terminal Alive

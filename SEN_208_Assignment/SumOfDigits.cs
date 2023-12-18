@@ -20,6 +20,7 @@ namespace SEN_208_Assignment
                 sum += number % 10;
             }
 
+            // Display the result
             Console.WriteLine("Sum of digits: {0}", sum);
 
             // Keep the terminal Alive
