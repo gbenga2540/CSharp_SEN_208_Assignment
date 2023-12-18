@@ -7,9 +7,9 @@ namespace SEN_208_Assignment
 {
     public class SimpleInterest
     {
-        public static void MainI(string[] args)
+        public static void Main(string[] args)
         {
-            // Get All Data
+            // Get All Inputs
             Console.Write("Enter the principal amount (e.g: 1000): ");
             double principal = Convert.ToDouble(Console.ReadLine());
             Console.Write("Enter the interest rate (e.g: 9): ");

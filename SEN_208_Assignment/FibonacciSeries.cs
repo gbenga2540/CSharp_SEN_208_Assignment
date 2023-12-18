@@ -9,7 +9,7 @@ namespace SEN_208_Assignment
     {
         public static void Main(string[] args)
         {
-            // Get All Data
+            // Get All Inputs
             Console.Write("Enter the number of terms in the Fibonacci series: ");
             int n = Convert.ToInt32(Console.ReadLine());
 
@@ -23,13 +23,14 @@ namespace SEN_208_Assignment
             // Keep the terminal Alive
             Console.ReadKey();
 
+
             // FUNCTIONS
-            static int Fibonacci(int n)
+            static int Fibonacci(int numOfTerms)
             {
-                if (n <= 1)
-                    return n;
+                if (numOfTerms <= 1)
+                    return numOfTerms;
                 else
-                    return Fibonacci(n - 1) + Fibonacci(n - 2);
+                    return Fibonacci(numOfTerms - 1) + Fibonacci(numOfTerms - 2);
             }
         }
     }

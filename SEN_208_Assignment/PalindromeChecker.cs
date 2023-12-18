@@ -7,21 +7,20 @@ namespace SEN_208_Assignment
 {
     public class PalindromeChecker
     {
-        public static void MainI(string[] args)
+        public static void Main(string[] args)
         {
-            // Get All Data
+            // Get All Inputs
             Console.Write("Enter a number: ");
             int number = Convert.ToInt32(Console.ReadLine());
 
+            // Run checks and Display the result
             if (IsPalindrome(number))
             {
-                // Display the result
-                Console.WriteLine($"{number} is a palindrome.");
+                Console.WriteLine("{0} is a palindrome.", number);
             }
             else
             {
-                // Display the result
-                Console.WriteLine($"{number} is not a palindrome.");
+                Console.WriteLine("{0} is not a palindrome.", number);
             }
 
             // Keep the terminal Alive
@@ -32,15 +31,15 @@ namespace SEN_208_Assignment
             static bool IsPalindrome(int num)
             {
                 // A number that reads the same foward as backward
-                int originalNumber = num;
-                int reversedNumber = 0;
+                int origNumber = num;
+                int revNumber = 0;
                 while (num > 0)
                 {
                     int remainder = num % 10;
-                    reversedNumber = reversedNumber * 10 + remainder;
+                    revNumber = revNumber * 10 + remainder;
                     num /= 10;
                 }
-                return originalNumber == reversedNumber;
+                return origNumber == revNumber;
             }
         }
     }

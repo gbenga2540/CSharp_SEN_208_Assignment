@@ -7,21 +7,21 @@ namespace SEN_208_Assignment
 {
     public class SumOfDigits
     {
-        public static void MainI(string[] args)
+        public static void Main(string[] args)
         {
-            // Get All Data
+            // Get All Inputs
             Console.Write("Enter a number: ");
             int number = Convert.ToInt32(Console.ReadLine());
 
-            // Iterate through each digit using a for loop and Add the last digit to the sum.
-            int sum = 0;
+            // Using a for loop, iterate through each digit and Add the last digit to the total.
+            int total = 0;
             for (; number != 0; number /= 10)
             {
-                sum += number % 10;
+                total += number % 10;
             }
 
             // Display the result
-            Console.WriteLine("Sum of digits: {0}", sum);
+            Console.WriteLine("Sum of digits: {0}", total);
 
             // Keep the terminal Alive
             Console.ReadKey();
